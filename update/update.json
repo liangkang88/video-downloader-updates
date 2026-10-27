@@ -5,8 +5,8 @@
     "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.9/VideoDownloader_Setup_v1.6.9.exe",
     "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.9/VideoDownloader_Setup_v1.6.9.exe"
   ],
-  "sha256": "ceea91babf0bc019739d19ede35c46872d03a43a92bb261eb6b3b7c80666a53f",
-  "size": 140196669,
-  "published_at": "2026-10-27T11:15:00+08:00",
+  "sha256": "eb5696a946aa9b836557d230f187357c7007736dc9601903f2c16923b16db10d",
+  "size": 140211605,
+  "published_at": "2026-10-27T11:27:00+08:00",
   "notes": "当前版本更新（v1.6.9）：\n\n- 在线更新改为 GitHub 永久公网托管，不再依赖 Cloudflare 临时隧道，\n  也不再需要本机常开后台服务。\n- 更新清单支持多节点容错：主节点不可用时自动切换到备用 CDN。\n- 安装包下载支持镜像回退：直连 GitHub 失败后自动改用加速镜像，\n  下载完成仍会强制校验 SHA256 与文件大小。\n- 清单请求自动追加时间戳参数，避免读到 CDN 缓存的旧版本。\n- 旧版客户端保存的临时隧道地址或内网地址会在启动时自动迁移到新地址。\n- 移除临时隧道守护相关逻辑，update_tunnel_guard.ps1 已停用。\n- 保留 v1.6.8 的 WebView2 界面、八套皮肤、迷你窗口和字幕工具能力。"
 }
