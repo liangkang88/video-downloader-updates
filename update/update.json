@@ -1,12 +1,12 @@
 {
-  "version": "1.6.11",
-  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.11/VideoDownloader_Setup_v1.6.11.exe",
+  "version": "1.6.12",
+  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.12/VideoDownloader_Setup_v1.6.12.exe",
   "installer_mirrors": [
-    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.11/VideoDownloader_Setup_v1.6.11.exe",
-    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.11/VideoDownloader_Setup_v1.6.11.exe"
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.12/VideoDownloader_Setup_v1.6.12.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.12/VideoDownloader_Setup_v1.6.12.exe"
   ],
-  "sha256": "398ade56d9ec9fe62c018bfa23bbc2c53815681a1721286bfa883f3154934e84",
-  "size": 124326200,
-  "published_at": "2026-10-27T13:06:00+08:00",
-  "notes": "当前版本更新（v1.6.11）：\n\n- 字幕工具窗口重做视觉：跟随主窗口当前皮肤（八套皮肤同步），\n  深色卡片式布局、同色强调按钮和输入框，不再是 Win32 浅灰风格。\n- 素材 / Whisper 运行环境 / 任务状态 / 运行日志改成带描边的卡片，\n  标题用强调色，提示文字用次要色，与主界面同一套排版规则。\n- 视频链接一行新增“粘贴”按钮，可直接从剪贴板填入链接。\n- 音频语言与输出方式合并到同一行，窗口按内容自适应高度，\n  日志区保留固定高度，小屏幕上也不会把内容挤出窗口。\n- 标题栏同步切换为深色，避免深色窗口顶着一条白色标题栏。\n- 运行日志新增“清空”按钮；任务运行中按钮自动置灰，取消任务才可点。\n\nv1.6.10 内容回顾：\n- 其余能力与 v1.6.10 一致：迷你下载条、公网自动更新、八套皮肤。"
+  "sha256": "e4d1ffbc08d50648515a84d93bde813c0fd561db6cddba0b50fafcf6aaf2ff70",
+  "size": 140208533,
+  "published_at": "2026-10-27T14:18:00+08:00",
+  "notes": "当前版本更新（v1.6.12）：\n\n- 修复 v1.6.11 安装包打漏 tkinter 组件的问题：那一版一启动就报\n  “Failed to execute script 'web_app' … No module named 'tkinter'”。\n  本版重新打包并补上完整性校验，安装后可以正常启动。\n- 字幕工具窗口与主界面风格统一：跟随当前皮肤（八套同步），深色卡片式\n  布局、强调色按钮和深色输入框，标题栏也同步为深色。\n- 素材 / Whisper 运行环境 / 任务状态 / 运行日志改成带描边的卡片，\n  标题用强调色，提示文字用次要色，与主界面同一套排版规则。\n- 更新包下载改为 8 通道分段并发（原来单通道），速度慢或某条通道被限流时\n  自动重试并重新分配分片；服务器不支持分段或全部失败时自动退回单通道兜底。\n- 视频链接一行新增“粘贴”按钮；运行日志新增“清空”按钮。\n- 音频语言与输出方式合并到同一行，窗口高度按内容自适应，日志区保留\n  固定高度，小屏也不会把内容挤出窗口。\n- 其余能力与 v1.6.10 一致：迷你下载条、公网自动更新、八套皮肤。"
 }
