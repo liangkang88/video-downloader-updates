@@ -1,12 +1,12 @@
 {
-  "version": "1.6.13",
-  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.13/VideoDownloader_Setup_v1.6.13.exe",
+  "version": "1.6.14",
+  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.14/VideoDownloader_Setup_v1.6.14.exe",
   "installer_mirrors": [
-    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.13/VideoDownloader_Setup_v1.6.13.exe",
-    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.13/VideoDownloader_Setup_v1.6.13.exe"
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.14/VideoDownloader_Setup_v1.6.14.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.14/VideoDownloader_Setup_v1.6.14.exe"
   ],
-  "sha256": "c2008f0fb803c07ec40cd6e5753a46d30c5c8348703e92c4ccce21b718ef08cb",
-  "size": 140208637,
-  "published_at": "2026-10-27T15:02:00+08:00",
-  "notes": "当前版本更新（v1.6.13）：\n\n- 修复 v1.6.12 启动后窗口“未响应”、点哪都没反应（随后被系统结束）的问题。\n  原因是界面桥接对象里带着窗口本身，pywebview 注入脚本时会递归遍历\n  WinForms 窗体的 .NET 属性（Bounds.Empty.Empty…），无限展开把界面线程占满。\n  现在把窗口对象标记为不可遍历，启动时不再做这轮死循环，界面恢复流畅。\n- 更新包的 8 通道分段下载保持不变：单通道兜底，慢通道自动重试。\n- 字幕工具窗口继续跟随主界面皮肤（八套同步）。\n- 其余能力与 v1.6.12 一致：8 通道更新下载、字幕工具统一皮肤、迷你下载条。"
+  "sha256": "27d1324be00c562e587a75c70c97c3facb7cb6d1ba74fb9df7a875efe94ebfcb",
+  "size": 140449611,
+  "published_at": "2026-10-27T21:25:19+08:00",
+  "notes": "当前版本更新（v1.6.14）：\n\n- 修复在“视频链接”输入框里按住鼠标左键往左拖动时，整个窗口跟着一起\n  移动、无法框选复制链接文字的问题。原因是无边框窗口启用了全局拖动，\n  窗口内任意位置按下都会被当成“拖动窗口”。现在只有标题栏空白处能拖动\n  窗口，输入框、按钮、下拉框等控件恢复正常，可以按住左键正常框选文字。\n- 同一原因也导致运行日志里的文字无法框选复制，本次一并修好。\n- 安装图标换成去白底的透明版本，桌面和任务栏不再带白色方块。\n- 版本号更新为 v1.6.14。"
 }
