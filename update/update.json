@@ -1,12 +1,12 @@
 {
-  "version": "1.6.12",
-  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.12/VideoDownloader_Setup_v1.6.12.exe",
+  "version": "1.6.13",
+  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.13/VideoDownloader_Setup_v1.6.13.exe",
   "installer_mirrors": [
-    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.12/VideoDownloader_Setup_v1.6.12.exe",
-    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.12/VideoDownloader_Setup_v1.6.12.exe"
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.13/VideoDownloader_Setup_v1.6.13.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.13/VideoDownloader_Setup_v1.6.13.exe"
   ],
-  "sha256": "e4d1ffbc08d50648515a84d93bde813c0fd561db6cddba0b50fafcf6aaf2ff70",
-  "size": 140208533,
-  "published_at": "2026-10-27T14:18:00+08:00",
-  "notes": "当前版本更新（v1.6.12）：\n\n- 修复 v1.6.11 安装包打漏 tkinter 组件的问题：那一版一启动就报\n  “Failed to execute script 'web_app' … No module named 'tkinter'”。\n  本版重新打包并补上完整性校验，安装后可以正常启动。\n- 字幕工具窗口与主界面风格统一：跟随当前皮肤（八套同步），深色卡片式\n  布局、强调色按钮和深色输入框，标题栏也同步为深色。\n- 素材 / Whisper 运行环境 / 任务状态 / 运行日志改成带描边的卡片，\n  标题用强调色，提示文字用次要色，与主界面同一套排版规则。\n- 更新包下载改为 8 通道分段并发（原来单通道），速度慢或某条通道被限流时\n  自动重试并重新分配分片；服务器不支持分段或全部失败时自动退回单通道兜底。\n- 视频链接一行新增“粘贴”按钮；运行日志新增“清空”按钮。\n- 音频语言与输出方式合并到同一行，窗口高度按内容自适应，日志区保留\n  固定高度，小屏也不会把内容挤出窗口。\n- 其余能力与 v1.6.10 一致：迷你下载条、公网自动更新、八套皮肤。"
+  "sha256": "c2008f0fb803c07ec40cd6e5753a46d30c5c8348703e92c4ccce21b718ef08cb",
+  "size": 140208637,
+  "published_at": "2026-10-27T15:02:00+08:00",
+  "notes": "当前版本更新（v1.6.13）：\n\n- 修复 v1.6.12 启动后窗口“未响应”、点哪都没反应（随后被系统结束）的问题。\n  原因是界面桥接对象里带着窗口本身，pywebview 注入脚本时会递归遍历\n  WinForms 窗体的 .NET 属性（Bounds.Empty.Empty…），无限展开把界面线程占满。\n  现在把窗口对象标记为不可遍历，启动时不再做这轮死循环，界面恢复流畅。\n- 更新包的 8 通道分段下载保持不变：单通道兜底，慢通道自动重试。\n- 字幕工具窗口继续跟随主界面皮肤（八套同步）。\n- 其余能力与 v1.6.12 一致：8 通道更新下载、字幕工具统一皮肤、迷你下载条。"
 }
