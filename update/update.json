@@ -1,12 +1,12 @@
 {
-  "version": "1.6.9",
-  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.9/VideoDownloader_Setup_v1.6.9.exe",
+  "version": "1.6.10",
+  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.10/VideoDownloader_Setup_v1.6.10.exe",
   "installer_mirrors": [
-    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.9/VideoDownloader_Setup_v1.6.9.exe",
-    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.9/VideoDownloader_Setup_v1.6.9.exe"
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.10/VideoDownloader_Setup_v1.6.10.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.10/VideoDownloader_Setup_v1.6.10.exe"
   ],
-  "sha256": "c3b6820724fd55171b97d077b6e359f7a7ed29a5e224ee8f006ce914a74f0ab3",
-  "size": 140197716,
-  "published_at": "2026-10-27T11:35:00+08:00",
-  "notes": "当前版本更新（v1.6.9）：\n\n- 在线更新改为 GitHub 永久公网托管，不再依赖 Cloudflare 临时隧道，\n  也不再需要本机常开后台服务。\n- 更新清单支持多节点容错：主节点不可用时自动切换到备用 CDN。\n- 安装包下载支持镜像回退：直连 GitHub 失败后自动改用加速镜像，\n  下载完成仍会强制校验 SHA256 与文件大小。\n- 清单请求自动追加时间戳参数，避免读到 CDN 缓存的旧版本。\n- 旧版客户端保存的临时隧道地址或内网地址会在启动时自动迁移到新地址。\n- 移除临时隧道守护相关逻辑，update_tunnel_guard.ps1 已停用。\n- 保留 v1.6.8 的 WebView2 界面、八套皮肤、迷你窗口和字幕工具能力。"
+  "sha256": "e351ec935bdcfe29dac327e97eefa8c9ad1b6e76055756a991597c6088aa2c78",
+  "size": 140206488,
+  "published_at": "2026-10-27T12:38:00+08:00",
+  "notes": "当前版本更新（v1.6.10）：\n\n- 修复迷你窗口不够迷你的问题：此前窗口最小高度被锁在 620 像素，\n  点迷你按钮只收起内容、窗口仍是整块大面板。\n- 迷你模式现在会同步下调窗口最小尺寸，窗口收缩到 780×116 的窄条，\n  只保留链接输入、粘贴、开始下载、速度/剩余/时间三项指标和进度条。\n- 迷你栏改为三行紧凑布局，指标等宽铺满，链接输入框自适应宽度，\n  恢复主窗口后自动还原 1040×760 与原来的最小尺寸限制。\n- 其余能力与 v1.6.9 一致：GitHub 永久公网更新、镜像回退、八套皮肤。"
 }
