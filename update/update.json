@@ -1,8 +1,12 @@
 {
   "version": "1.6.8",
   "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.8/VideoDownloader_Setup_v1.6.8.exe",
+  "installer_mirrors": [
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.8/VideoDownloader_Setup_v1.6.8.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.8/VideoDownloader_Setup_v1.6.8.exe"
+  ],
   "sha256": "4d72c806bd65f00d2fb9080a54a7509a4ee51742951d5997226f2288e2017912",
   "size": 140288114,
   "published_at": "2026-10-27T10:40:00+08:00",
-  "notes": "当前版本更新：\n\n- 主界面改为直接使用 HTML/CSS 设计稿，并通过 Edge WebView2 渲染，\n  不再用 Tkinter 近似拼装。\n- 完整实现任务步骤、链接主卡片、折叠设置、集中进度面板和日志抽屉。\n- 迷你窗口复用同一套 HTML/CSS 组件，保留下载、速度、剩余时间和进度。\n- 皮肤扩展到八套：夜幕金、冰川蓝、松石绿、樱雾紫、暖砂棕、\n  赤焰红、海盐青、月岩灰；切换后主窗口和迷你窗口同步生效。\n- 支持拖入链接或分享文案，设置和日志可用鼠标或键盘展开。\n- 下载设置摘要与当前选项同步；下载中锁定输入和设置，暂停后恢复，\n  新任务开始前会等待设置保存完成。\n- 补齐进度解析态、完成/失败配色、错误日志自动展开和无障碍状态属性。\n- 普通入口、抖音专用入口和调试入口现已统一启动 WebView2 界面。\n- 在线更新安装成功后自动删除已下载的安装包残留。\n- 自动检查发现新版本时，右上角“更新”按钮显示红色圆点；\n  点击按钮可查看版本说明，避免启动时突然弹出更新窗口。\n- 更新清单改为 GitHub 永久公网托管，不再依赖临时隧道。\n- 保留 Deno、yt-dlp、FFmpeg、自动更新、SHA256 校验和下载优化。"
+  "notes": "当前版本更新：\n\n- 主界面改为直接使用 HTML/CSS 设计稿，并通过 Edge WebView2 渲染，\n  不再用 Tkinter 近似拼装。\n- 完整实现任务步骤、链接主卡片、折叠设置、集中进度面板和日志抽屉。\n- 迷你窗口复用同一套 HTML/CSS 组件，保留下载、速度、剩余时间和进度。\n- 皮肤扩展到八套：夜幕金、冰川蓝、松石绿、樱雾紫、暖砂棕、\n  赤焰红、海盐青、月岩灰；切换后主窗口和迷你窗口同步生效。\n- 支持拖入链接或分享文案，设置和日志可用鼠标或键盘展开。\n- 下载设置摘要与当前选项同步；下载中锁定输入和设置，暂停后恢复，\n  新任务开始前会等待设置保存完成。\n- 补齐进度解析态、完成/失败配色、错误日志自动展开和无障碍状态属性。\n- 普通入口、抖音专用入口和调试入口现已统一启动 WebView2 界面。\n- 在线更新安装成功后自动删除已下载的安装包残留。\n- 自动检查发现新版本时，右上角“更新”按钮显示红色圆点；\n  点击按钮可查看版本说明，避免启动时突然弹出更新窗口。\n- 更新清单改为 GitHub 永久公网托管，不再依赖临时隧道；\n  清单多镜像容错，安装包支持直连失败后自动切换加速镜像。\n- 保留 Deno、yt-dlp、FFmpeg、自动更新、SHA256 校验和下载优化。"
 }
