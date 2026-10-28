@@ -5,9 +5,9 @@
     "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe",
     "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe"
   ],
-  "sha256": "4554a359bbb2fbdd7801944c9912ecc9dc18a4f3e1aeec630738b92295d89869",
-  "size": 145833169,
-  "published_at": "2026-10-28T17:45:42+08:00",
+  "sha256": "79cf2b95d6f7ca47414c0337dcf8ec2202ce3cc08e86ac7c80123348523930df",
+  "size": 145820260,
+  "published_at": "2026-10-28T17:54:46+08:00",
   "notes": "当前版本更新（v1.6.18）：\n\n- 新增「增量更新」：以后升级只下载发生变化的那部分文件，不再每次拖 130\n  多 MB 的完整安装包。普通小版本通常只需要几 MB 到几十 MB，下载量和\n  等待时间都降到原来的零头。\n- 更新过程加了多道保险：动手前先校验本地文件确实是旧版本，下载后逐个\n  文件核对 SHA256，替换前自动备份；任何一步出问题都会自动回滚到更新前\n  的状态并重新打开程序，不会出现「更新失败就打不开」。\n- 「检查更新」弹窗会直接写明这次要下多少 MB，以及完整安装包有多大。\n- 本次更新仍需完整安装包（当前版本还不认识增量包），从下一个版本起\n  自动生效，不需要任何额外设置。\n- 版本号更新为 v1.6.18。",
   "patches": [
     {
@@ -18,11 +18,11 @@
         "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip",
         "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip"
       ],
-      "sha256": "bd2139427b66fda95c74fba81fe0ec1eecdefc8841989342b4d1ccb07f60b2a8",
-      "size": 8319578,
+      "sha256": "b83468e0439b048020355315b147251795e8bf757c99f3b260339e56037c2c4a",
+      "size": 8319995,
       "file_count": 4,
       "delete_count": 0,
-      "unpacked_size": 9524257,
+      "unpacked_size": 9525278,
       "base_key": [
         {
           "path": "VideoDownloader.exe",
