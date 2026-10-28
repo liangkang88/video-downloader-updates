@@ -1,43 +1,43 @@
 {
-  "version": "1.6.18",
-  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe",
+  "version": "1.6.19",
+  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.19/VideoDownloader_Setup_v1.6.19.exe",
   "installer_mirrors": [
-    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe",
-    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe"
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.19/VideoDownloader_Setup_v1.6.19.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.19/VideoDownloader_Setup_v1.6.19.exe"
   ],
-  "sha256": "79cf2b95d6f7ca47414c0337dcf8ec2202ce3cc08e86ac7c80123348523930df",
-  "size": 145820260,
-  "published_at": "2026-10-28T17:54:46+08:00",
-  "notes": "当前版本更新（v1.6.18）：\n\n- 新增「增量更新」：以后升级只下载发生变化的那部分文件，不再每次拖 130\n  多 MB 的完整安装包。普通小版本通常只需要几 MB 到几十 MB，下载量和\n  等待时间都降到原来的零头。\n- 更新过程加了多道保险：动手前先校验本地文件确实是旧版本，下载后逐个\n  文件核对 SHA256，替换前自动备份；任何一步出问题都会自动回滚到更新前\n  的状态并重新打开程序，不会出现「更新失败就打不开」。\n- 「检查更新」弹窗会直接写明这次要下多少 MB，以及完整安装包有多大。\n- 本次更新仍需完整安装包（当前版本还不认识增量包），从下一个版本起\n  自动生效，不需要任何额外设置。\n- 版本号更新为 v1.6.18。",
+  "sha256": "dde4d133c0ca291634e7b6e214abf8200e17820c346549ec70121b04b4e9f30b",
+  "size": 145834712,
+  "published_at": "2026-10-28T20:46:12+08:00",
+  "notes": "当前版本更新（v1.6.19）：\n\n- 修复下 YouTube 视频失败时，弹窗却提示“抖音需要浏览器生成的临时访问\n  凭证”的问题。原因是错误提示只按报错文字匹配、不看链接来自哪个网站，\n  把浏览器 Cookie 读不到这类通用错误统统当成了抖音专用错误。现在提示\n  会先判断网址：抖音的链接给抖音的解决办法，YouTube 等站点不会再出现\n  抖音字样。\n- 浏览器开着的时候，Chrome / Edge 的 Cookies 数据库会被它独占，工具读\n  不到。以前这种情况直接报错停下，现在会被识别出来，并自动改用「无\n  Cookie 模式」继续下载——YouTube 上的公开视频本来就不需要登录，可以\n  正常下载完成；日志里会写明这次是降级模式。\n- 抖音链接仍然要求 Cookie，遇到浏览器占用会明确告诉你该关浏览器、换\n  Cookie 文件还是走「抖音下载自检与修复」，不会悄悄降级导致下载失败。\n- 新增几类错误的中文说明：Cookie 无法解密、浏览器占用 Cookie 库、平台\n  要求验证登录（“确认你不是机器人”）、代理连接失败（502），都给出了\n  具体处理步骤，不再直接甩英文原始报错。\n- 修复增量更新偶尔卡在「程序没有在 90 秒内退出」后失败的问题。原因是\n  更新脚本按进程名等待，机器上装了第二份同名程序时会被它卡住。现在只\n  等待当前安装目录里的那个程序，超时后自动结束残留实例再继续。\n- 本次起在线升级走增量包，只需下载约 8 MB，不再下载 139 MB 完整包。\n- 版本号更新为 v1.6.19。",
   "patches": [
     {
-      "from_version": "1.6.17",
-      "to_version": "1.6.18",
-      "url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip",
+      "from_version": "1.6.18",
+      "to_version": "1.6.19",
+      "url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.19/patch_v1.6.18_to_v1.6.19.zip",
       "mirrors": [
-        "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip",
-        "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip"
+        "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.19/patch_v1.6.18_to_v1.6.19.zip",
+        "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.19/patch_v1.6.18_to_v1.6.19.zip"
       ],
-      "sha256": "b83468e0439b048020355315b147251795e8bf757c99f3b260339e56037c2c4a",
-      "size": 8319995,
+      "sha256": "78df12b90c0207f197b4f3d7c60d33ffd092974135568f3641a171d7d3f6f754",
+      "size": 8322698,
       "file_count": 4,
       "delete_count": 0,
-      "unpacked_size": 9525278,
+      "unpacked_size": 9527478,
       "base_key": [
         {
           "path": "VideoDownloader.exe",
-          "size": 8030698,
-          "sha256": "b2b1bdd376ff1f2b33106bd8d2183f443ed9806a2862e96bf1d22897915bba85"
+          "size": 8044918,
+          "sha256": "e0eb7023ce330bb18960938056fc1dd6566a4f682ae86728f5c895f26d4ae34c"
         },
         {
           "path": "_internal/base_library.zip",
           "size": 1409329,
-          "sha256": "e788f385cde2e36bfad92d3fb0d1bf603885bee91fedb8e7e91ff61789400869"
+          "sha256": "57d175d9da1a6dc146a50df808950ab7d66dbde6218ca2e7a23728109f65a6ed"
         },
         {
           "path": "_internal/web_ui/index.html",
-          "size": 55825,
-          "sha256": "d074b7535f7e6f039f864b88b51b9cd3705250995c3c4b00ba74680d0587821e"
+          "size": 56479,
+          "sha256": "c5de42ae51ed37fd98f7452823c0079007299980b28bd0b4a9593866341255d5"
         }
       ]
     }
