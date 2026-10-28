@@ -5,8 +5,8 @@
     "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe",
     "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe"
   ],
-  "sha256": "2cf7873afd0c4ebcd3e79f949eddc27672d957915314dcc4a2e494e0494507e7",
-  "size": 140295270,
-  "published_at": "2026-10-28T16:36:29+08:00",
+  "sha256": "8c60c9c6778c8bc289d5f4659cdbcacbd3d9d3e3116e5b862efedfba3d56fca2",
+  "size": 145817815,
+  "published_at": "2026-10-28T16:59:09+08:00",
   "notes": "当前版本更新（v1.6.17）：\n\n- 修复点「更新 yt-dlp」后，顶部一直显示「yt-dlp 已更新」，进度条却还在\n  来回滑动的问题。原因是后台任务结束后界面只更新了状态文字，没有退出\n  「进行中」阶段，进度条的未确定动画就一直转。现在更新完成会正常收尾：\n  进度条走满并停住、状态变绿。\n- 同一处逻辑也修好了「抖音自检」「关闭浏览器后台」等非下载任务结束后\n  进度条不停的问题；失败或取消时进度条会正确复位。\n- 内置「导出YouTube_Cookies.exe」换成新版：登录一次后登录态会长期保留，\n  下次直接回车就能导出；退出时会连浏览器子进程一起清理，不再出现第二次\n  运行没反应、读不到 Cookie 的情况。\n- 版本号更新为 v1.6.17。"
 }
