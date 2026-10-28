@@ -1,12 +1,45 @@
 {
-  "version": "1.6.17",
-  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe",
+  "version": "1.6.18",
+  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe",
   "installer_mirrors": [
-    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe",
-    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe"
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/VideoDownloader_Setup_v1.6.18.exe"
   ],
-  "sha256": "8c60c9c6778c8bc289d5f4659cdbcacbd3d9d3e3116e5b862efedfba3d56fca2",
-  "size": 145817815,
-  "published_at": "2026-10-28T16:59:09+08:00",
-  "notes": "当前版本更新（v1.6.17）：\n\n- 修复点「更新 yt-dlp」后，顶部一直显示「yt-dlp 已更新」，进度条却还在\n  来回滑动的问题。原因是后台任务结束后界面只更新了状态文字，没有退出\n  「进行中」阶段，进度条的未确定动画就一直转。现在更新完成会正常收尾：\n  进度条走满并停住、状态变绿。\n- 同一处逻辑也修好了「抖音自检」「关闭浏览器后台」等非下载任务结束后\n  进度条不停的问题；失败或取消时进度条会正确复位。\n- 内置「导出YouTube_Cookies.exe」换成新版：登录一次后登录态会长期保留，\n  下次直接回车就能导出；退出时会连浏览器子进程一起清理，不再出现第二次\n  运行没反应、读不到 Cookie 的情况。\n- 版本号更新为 v1.6.17。"
+  "sha256": "4554a359bbb2fbdd7801944c9912ecc9dc18a4f3e1aeec630738b92295d89869",
+  "size": 145833169,
+  "published_at": "2026-10-28T17:45:42+08:00",
+  "notes": "当前版本更新（v1.6.18）：\n\n- 新增「增量更新」：以后升级只下载发生变化的那部分文件，不再每次拖 130\n  多 MB 的完整安装包。普通小版本通常只需要几 MB 到几十 MB，下载量和\n  等待时间都降到原来的零头。\n- 更新过程加了多道保险：动手前先校验本地文件确实是旧版本，下载后逐个\n  文件核对 SHA256，替换前自动备份；任何一步出问题都会自动回滚到更新前\n  的状态并重新打开程序，不会出现「更新失败就打不开」。\n- 「检查更新」弹窗会直接写明这次要下多少 MB，以及完整安装包有多大。\n- 本次更新仍需完整安装包（当前版本还不认识增量包），从下一个版本起\n  自动生效，不需要任何额外设置。\n- 版本号更新为 v1.6.18。",
+  "patches": [
+    {
+      "from_version": "1.6.17",
+      "to_version": "1.6.18",
+      "url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip",
+        "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.18/patch_v1.6.17_to_v1.6.18.zip"
+      ],
+      "sha256": "bd2139427b66fda95c74fba81fe0ec1eecdefc8841989342b4d1ccb07f60b2a8",
+      "size": 8319578,
+      "file_count": 4,
+      "delete_count": 0,
+      "unpacked_size": 9524257,
+      "base_key": [
+        {
+          "path": "VideoDownloader.exe",
+          "size": 8030698,
+          "sha256": "b2b1bdd376ff1f2b33106bd8d2183f443ed9806a2862e96bf1d22897915bba85"
+        },
+        {
+          "path": "_internal/base_library.zip",
+          "size": 1409329,
+          "sha256": "e788f385cde2e36bfad92d3fb0d1bf603885bee91fedb8e7e91ff61789400869"
+        },
+        {
+          "path": "_internal/web_ui/index.html",
+          "size": 55825,
+          "sha256": "d074b7535f7e6f039f864b88b51b9cd3705250995c3c4b00ba74680d0587821e"
+        }
+      ]
+    }
+  ]
 }
