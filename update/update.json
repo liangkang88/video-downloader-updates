@@ -1,12 +1,12 @@
 {
-  "version": "1.6.14",
-  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.14/VideoDownloader_Setup_v1.6.14.exe",
+  "version": "1.6.17",
+  "installer_url": "https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe",
   "installer_mirrors": [
-    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.14/VideoDownloader_Setup_v1.6.14.exe",
-    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.14/VideoDownloader_Setup_v1.6.14.exe"
+    "https://gh-proxy.com/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe",
+    "https://ghproxy.net/https://github.com/liangkang88/video-downloader-updates/releases/download/v1.6.17/VideoDownloader_Setup_v1.6.17.exe"
   ],
-  "sha256": "27d1324be00c562e587a75c70c97c3facb7cb6d1ba74fb9df7a875efe94ebfcb",
-  "size": 140449611,
-  "published_at": "2026-10-27T21:25:19+08:00",
-  "notes": "当前版本更新（v1.6.14）：\n\n- 修复在“视频链接”输入框里按住鼠标左键往左拖动时，整个窗口跟着一起\n  移动、无法框选复制链接文字的问题。原因是无边框窗口启用了全局拖动，\n  窗口内任意位置按下都会被当成“拖动窗口”。现在只有标题栏空白处能拖动\n  窗口，输入框、按钮、下拉框等控件恢复正常，可以按住左键正常框选文字。\n- 同一原因也导致运行日志里的文字无法框选复制，本次一并修好。\n- 安装图标换成去白底的透明版本，桌面和任务栏不再带白色方块。\n- 版本号更新为 v1.6.14。"
+  "sha256": "2cf7873afd0c4ebcd3e79f949eddc27672d957915314dcc4a2e494e0494507e7",
+  "size": 140295270,
+  "published_at": "2026-10-28T16:36:29+08:00",
+  "notes": "当前版本更新（v1.6.17）：\n\n- 修复点「更新 yt-dlp」后，顶部一直显示「yt-dlp 已更新」，进度条却还在\n  来回滑动的问题。原因是后台任务结束后界面只更新了状态文字，没有退出\n  「进行中」阶段，进度条的未确定动画就一直转。现在更新完成会正常收尾：\n  进度条走满并停住、状态变绿。\n- 同一处逻辑也修好了「抖音自检」「关闭浏览器后台」等非下载任务结束后\n  进度条不停的问题；失败或取消时进度条会正确复位。\n- 内置「导出YouTube_Cookies.exe」换成新版：登录一次后登录态会长期保留，\n  下次直接回车就能导出；退出时会连浏览器子进程一起清理，不再出现第二次\n  运行没反应、读不到 Cookie 的情况。\n- 版本号更新为 v1.6.17。"
 }
